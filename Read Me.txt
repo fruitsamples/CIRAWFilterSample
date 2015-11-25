@@ -1,0 +1,9 @@
+Copyright © 2004-2009 by Apple, Inc.  All Rights Reserved.
+
+CIRAWFilterSample
+
+The CIRAWFilter sample is a document based Cocoa application that showcases the use of the CIRAWFilter.
+
+It uses a stack of Core Image filters to display an image. The first filter in the stack is a CIRAWFilter and the UI lets the user add additional CIFilters.
+
+The example makes vast use of bindings (KVC and KVO) to keep the code concise. This illustrates how to use CIFilter instances' support for KVC and KVO. Note that the above mentioned filter stack's last filter is inserted into an NSObserver subclass to keep track of changes to the final output image.
